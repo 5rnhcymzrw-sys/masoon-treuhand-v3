@@ -265,20 +265,6 @@ input:focus-visible,textarea:focus-visible{
   right:0
 }
 
-.header-inner nav a:last-child{
-  background:white;
-  color:#1a1a1a;
-  padding:10px 22px
-}
-
-.header-inner nav a:last-child:after{
-  display:none
-}
-
-.header-inner nav a:last-child:hover{
-  background:#d9d9d9
-}
-
 .menu-toggle{
   display:none
 }
@@ -1175,10 +1161,6 @@ details[open] .plus{
   .header-inner nav a{
     padding:12px 0;
     font-size:16px
-  }
-  .header-inner nav a:last-child{
-    margin-top:12px;
-    align-self:flex-start
   }
   .header-inner nav a:after{
     display:none
