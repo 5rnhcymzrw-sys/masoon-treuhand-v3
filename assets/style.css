@@ -1,3 +1,12 @@
+/* MASOON TREUHAND V3 | zentrale Designquelle
+   Bestehende Gestaltung der Website. Regeln nach Bereichen geordnet.
+*/
+
+/* =========================================================
+   SCHRIFTEN
+   Inter für Fliesstext und Cormorant für Überschriften.
+   ========================================================= */
+
 @font-face{
   font-family:Inter;
   src:url('/assets/inter.woff2') format('woff2');
@@ -14,6 +23,11 @@
   font-display:swap
 }
 
+/* =========================================================
+   GLOBALE DESIGNWERTE
+   Farben, Schriften und Seitenabstände für die gesamte Website.
+   ========================================================= */
+
 :root{
   --ink:#171717;
   --muted:#626262;
@@ -24,6 +38,11 @@
   --gutter:clamp(24px,5.5vw,96px);
   color-scheme:light
 }
+
+/* =========================================================
+   WEBSITE: GRUNDLAGEN
+   Allgemeine Basiswerte für Layout, Schrift und Elemente.
+   ========================================================= */
 
 *{
   box-sizing:border-box
@@ -116,6 +135,11 @@ input:focus-visible,textarea:focus-visible{
   outline-offset:3px
 }
 
+/* =========================================================
+   BARRIEREFREIHEIT UND FOKUS
+   Tastaturfokus und Sprunglink zum Hauptinhalt.
+   ========================================================= */
+
 .skip{
   position:absolute;
   left:20px;
@@ -129,6 +153,11 @@ input:focus-visible,textarea:focus-visible{
 .skip:focus{
   top:15px
 }
+
+/* =========================================================
+   KOPFZEILE
+   Logo, Hauptnavigation und Menüschalter.
+   ========================================================= */
 
 .site-header{
   background:#fff;
@@ -203,6 +232,11 @@ input:focus-visible,textarea:focus-visible{
   display:none
 }
 
+/* =========================================================
+   WIEDERVERWENDBARE ELEMENTE
+   Kleine Bereichstitel, Abschnittsabstände und gemeinsame Links.
+   ========================================================= */
+
 .eyebrow{
   text-transform:uppercase;
   font:500 12px/1.5 var(--sans);
@@ -215,6 +249,11 @@ input:focus-visible,textarea:focus-visible{
   max-width:1632px;
   margin:auto
 }
+
+/* =========================================================
+   STARTSEITE: HERO
+   Linker Textbereich und rechtes Portrait.
+   ========================================================= */
 
 .hero{
   position:relative;
@@ -313,6 +352,11 @@ input:focus-visible,textarea:focus-visible{
   color:var(--muted)
 }
 
+/* =========================================================
+   STARTSEITE: BEREICHSKÖPFE
+   Gemeinsame Anordnung von Bereichstitel und grosser Überschrift.
+   ========================================================= */
+
 .section-heading{
   display:grid;
   grid-template-columns:1fr 2fr;
@@ -327,6 +371,11 @@ input:focus-visible,textarea:focus-visible{
 .section-heading h2{
   max-width:740px
 }
+
+/* =========================================================
+   STARTSEITE: DIENSTLEISTUNGEN
+   Raster und Darstellung der sechs Leistungskarten.
+   ========================================================= */
 
 .home-services{
   border-top:1px solid var(--line)
@@ -384,6 +433,11 @@ input:focus-visible,textarea:focus-visible{
   margin-top:34px
 }
 
+/* =========================================================
+   STARTSEITE: FACHWISSEN
+   Darstellung der Fachbeiträge auf der Startseite.
+   ========================================================= */
+
 .home-knowledge{
   background:var(--surface)
 }
@@ -432,6 +486,11 @@ input:focus-visible,textarea:focus-visible{
   gap:28px
 }
 
+/* =========================================================
+   KONTAKTBEREICH
+   Dunkler Abschlussbereich mit Kontaktlink.
+   ========================================================= */
+
 .contact-band{
   background:#1a1a1a;
   color:white;
@@ -456,6 +515,11 @@ input:focus-visible,textarea:focus-visible{
   margin-top:26px
 }
 
+/* =========================================================
+   FUSSZEILE
+   Copyright und Links zu Rechtlichem und Kontakt.
+   ========================================================= */
+
 .site-footer{
   display:flex;
   align-items:center;
@@ -479,6 +543,11 @@ input:focus-visible,textarea:focus-visible{
   text-underline-offset:5px
 }
 
+/* =========================================================
+   UNTERSEITEN: GEMEINSAME SEITENTITEL
+   Einleitung und Titelbereich der Unterseiten.
+   ========================================================= */
+
 .page-heading{
   padding:6px 0 65px;
   max-width:820px
@@ -487,6 +556,11 @@ input:focus-visible,textarea:focus-visible{
 .page-heading h1{
   margin-top:25px
 }
+
+/* =========================================================
+   UNTERNEHMEN
+   Einleitung, Portrait, Werte und Zusammenarbeit.
+   ========================================================= */
 
 .company-intro{
   display:grid;
@@ -579,6 +653,11 @@ input:focus-visible,textarea:focus-visible{
   line-height:1.9
 }
 
+/* =========================================================
+   DIENSTLEISTUNGEN
+   Leistungszeilen, Detailansicht und Aufzählungen.
+   ========================================================= */
+
 .services{
   padding-top:73px
 }
@@ -661,6 +740,11 @@ details[open] .plus{
   break-inside:avoid
 }
 
+/* =========================================================
+   FACHWISSEN
+   Beitragsübersicht und fachlicher Hinweis.
+   ========================================================= */
+
 .knowledge{
   padding-top:73px
 }
@@ -687,6 +771,11 @@ details[open] .plus{
   font-size:15px;
   max-width:780px
 }
+
+/* =========================================================
+   KONTAKTSEITE
+   Kontaktdaten und Kontaktformular.
+   ========================================================= */
 
 .contact-page{
   display:grid;
@@ -824,6 +913,11 @@ details[open] .plus{
   padding-left:14px
 }
 
+/* =========================================================
+   RECHTSEITEN
+   Datenschutz, Impressum und Disclaimer.
+   ========================================================= */
+
 .legal{
   padding-top:70px;
   max-width:1120px;
@@ -847,6 +941,11 @@ details[open] .plus{
   font-size:16px;
   line-height:1.9
 }
+
+/* =========================================================
+   FACHBEITRÄGE: EINZELANSICHT
+   Titel, Texte, Listen, Tabellen und Zurücklink.
+   ========================================================= */
 
 .article-main{
   max-width:1060px;
@@ -948,6 +1047,12 @@ details[open] .plus{
   overflow-wrap:anywhere
 }
 
+/* =========================================================
+   RESPONSIVE ANPASSUNGEN
+   Grössere Bildschirme, Tablet und Mobilansicht.
+   ========================================================= */
+
+/* GROSSE BILDSCHIRME */
 @media(min-width:1700px){
   .contact-band{
     padding-left:max(var(--gutter),calc((100vw - 1440px)/2));
@@ -955,6 +1060,7 @@ details[open] .plus{
   }
 }
 
+/* TABLET UND KLEINERE DESKTOPS */
 @media(max-width:1100px){
   .hero{
     gap:30px;
@@ -1014,6 +1120,7 @@ details[open] .plus{
   }
 }
 
+/* TABLET UND MOBILE NAVIGATION */
 @media(max-width:800px){
   .header-inner{
     min-height:116px;
@@ -1214,6 +1321,7 @@ details[open] .plus{
   }
 }
 
+/* MOBILE ANSICHT */
 @media(max-width:540px){
   :root{
     --gutter:24px
@@ -1457,6 +1565,7 @@ details[open] .plus{
   }
 }
 
+/* REDUZIERTE BEWEGUNG */
 @media(prefers-reduced-motion:reduce){
   html{
     scroll-behavior:auto
