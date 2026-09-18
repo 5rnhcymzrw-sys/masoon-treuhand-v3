@@ -293,15 +293,6 @@ input:focus-visible,textarea:focus-visible{
   min-height:700px
 }
 
-.hero:before{
-  content:'';
-  position:absolute;
-  inset:0 44% 0 0;
-  background:url('/assets/background-portrait.png') no-repeat 40% 30%;
-  background-size:cover;
-  z-index:-1
-}
-
 .hero-copy{
   align-self:center;
   padding:14px 0 36px
@@ -564,9 +555,7 @@ input:focus-visible,textarea:focus-visible{
   display:grid;
   grid-template-columns:1.15fr 1fr;
   gap:80px;
-  padding-top:72px;
-  background:url('/assets/background.png') no-repeat left top;
-  background-size:cover
+  padding-top:72px
 }
 
 .company-intro h1{
@@ -1261,10 +1250,6 @@ details[open] .plus{
     gap:26px;
     padding-top:27px;
     padding-bottom:44px
-  }
-  .hero:before{
-    inset:0 0 35% 0;
-    background-position:right top
   }
   .hero-copy{
     padding:13px 0 0
