@@ -512,7 +512,6 @@ input:focus-visible,textarea:focus-visible{
 .site-footer{
   display:flex;
   align-items:center;
-  justify-content:space-between;
   padding:33px var(--gutter);
   font-size:var(--footer-size);
   letter-spacing:.025em;
