@@ -74,7 +74,8 @@
   --content-width:1632px;
   --header-content-width:1440px;
   --header-height:143px;
-  --section-space:100px;
+  --section-space-top:100px;
+  --section-space-bottom:100px;
   --footer-size:11px;
 
   color-scheme:light
@@ -296,7 +297,7 @@ input:focus-visible,textarea:focus-visible{
 }
 
 .section{
-  padding:var(--section-space) var(--gutter);
+  padding:var(--section-space-top) var(--gutter) var(--section-space-bottom);
   max-width:var(--content-width);
   margin:auto
 }
@@ -1071,6 +1072,9 @@ details[open] .plus{
 
 /* TABLET UND KLEINERE DESKTOPS */
 @media(max-width:1100px){
+  :root{
+    --subtitle-size:31px
+  }
   .hero{
     gap:30px;
     min-height:620px
@@ -1092,7 +1096,6 @@ details[open] .plus{
     gap:30px
   }
   .service-teaser h3{
-    font-size:27px;
     overflow-wrap:anywhere
   }
   .company-intro{
@@ -1114,9 +1117,6 @@ details[open] .plus{
     grid-template-columns:35px minmax(180px,.8fr) minmax(0,1.4fr);
     gap:22px
   }
-  .service-row h2{
-    font-size:31px
-  }
   .header-inner nav{
     gap:20px
   }
@@ -1131,8 +1131,13 @@ details[open] .plus{
 
 /* TABLET UND MOBILE NAVIGATION */
 @media(max-width:800px){
+  :root{
+    --header-height:116px;
+    --label-size:11px;
+    --section-space-top:65px;
+    --section-space-bottom:65px
+  }
   .header-inner{
-    min-height:116px;
     position:relative;
     flex-wrap:wrap;
     gap:0
@@ -1189,27 +1194,14 @@ details[open] .plus{
     font-size:clamp(47px,7.9vw,66px);
     margin-top:22px
   }
-  .hero-intro{
-    font-size:14px;
-    line-height:1.85;
-    letter-spacing:.015em
-  }
   .hero-image>img{
     min-height:430px
   }
   .hero-copy{
     padding-bottom:20px
   }
-  .eyebrow{
-    font-size:11px
-  }
   .hero .text-link{
-    margin-top:18px;
-    font-size:13px
-  }
-  .section{
-    padding-top:65px;
-    padding-bottom:65px
+    margin-top:18px
   }
   .section-heading{
     grid-template-columns:1fr;
@@ -1237,9 +1229,6 @@ details[open] .plus{
   .home-knowledge .article-card:last-child{
     grid-column:1/-1;
     max-width:600px
-  }
-  .article-card h3{
-    font-size:30px
   }
   .contact-band{
     grid-template-columns:1fr;
@@ -1276,20 +1265,13 @@ details[open] .plus{
   .values-grid{
     gap:30px
   }
-  .values-grid h3{
-    font-size:31px
-  }
   .collaboration>p{
     margin-left:0;
-    max-width:none;
-    font-size:17px
+    max-width:none
   }
   .service-row{
     grid-template-columns:35px 1fr;
     gap:15px 25px
-  }
-  .service-row h2{
-    font-size:35px
   }
   .service-row>div{
     grid-column:2
@@ -1333,10 +1315,16 @@ details[open] .plus{
 /* MOBILE ANSICHT */
 @media(max-width:540px){
   :root{
-    --gutter:24px
-  }
-  .header-inner{
-    min-height:111px
+    --gutter:24px;
+    --header-height:111px;
+    --body-size:15px;
+    --title-h1-size:48px;
+    --title-h2-size:40px;
+    --subtitle-size:31px;
+    --label-size:11px;
+    --section-space-top:53px;
+    --section-space-bottom:55px;
+    --footer-size:10px
   }
   .brand{
     width:143px;
@@ -1361,14 +1349,10 @@ details[open] .plus{
     margin:23px 0 26px
   }
   .hero-intro{
-    font-size:15px;
-    max-width:440px;
-    letter-spacing:.018em;
-    line-height:1.8
+    max-width:440px
   }
   .hero .text-link{
-    margin-top:17px;
-    font-size:14px
+    margin-top:17px
   }
   .hero-image{
     padding-bottom:46px;
@@ -1385,13 +1369,6 @@ details[open] .plus{
     font-size:10px;
     gap:3px;
     bottom:0
-  }
-  .section{
-    padding-top:53px;
-    padding-bottom:55px
-  }
-  .section-heading h2{
-    font-size:40px
   }
   .section-heading{
     gap:18px;
@@ -1410,11 +1387,9 @@ details[open] .plus{
     top:25px
   }
   .service-teaser h3{
-    font-size:29px;
     margin:0 0 13px
   }
   .service-teaser p{
-    font-size:14px;
     max-width:380px
   }
   .service-teaser .corner-link{
@@ -1422,7 +1397,6 @@ details[open] .plus{
   }
   .home-services>.text-link,.home-knowledge>.text-link{
     margin-top:19px;
-    font-size:13px;
     gap:24px
   }
   .articles-grid{
@@ -1433,20 +1407,10 @@ details[open] .plus{
     padding-top:20px
   }
   .article-card h3{
-    font-size:33px;
     margin:19px 0 15px
-  }
-  .article-card p{
-    font-size:15px
   }
   .home-knowledge .article-card:last-child{
     grid-column:auto
-  }
-  .article-card .text-link{
-    font-size:13px
-  }
-  .contact-band h2{
-    font-size:44px
   }
   .contact-band{
     padding-top:44px;
@@ -1454,7 +1418,6 @@ details[open] .plus{
     gap:19px
   }
   .site-footer{
-    font-size:10px;
     padding-top:26px;
     padding-bottom:26px;
     gap:19px
@@ -1463,11 +1426,7 @@ details[open] .plus{
     gap:15px
   }
   .company-intro h1{
-    font-size:47px;
     margin-top:22px
-  }
-  .company-copy p{
-    font-size:15px
   }
   .company-intro figure{
     width:100%
@@ -1486,18 +1445,10 @@ details[open] .plus{
     padding-top:7px
   }
   .values-grid h3{
-    font-size:35px;
     margin:0 0 16px
   }
   .values-grid p{
-    grid-column:2;
-    font-size:15px
-  }
-  .collaboration>p{
-    font-size:16px
-  }
-  .page-heading h1{
-    font-size:48px
+    grid-column:2
   }
   .service-row{
     grid-template-columns:25px 1fr;
@@ -1505,11 +1456,7 @@ details[open] .plus{
     padding:29px 0 34px
   }
   .service-row h2{
-    font-size:31px;
     overflow-wrap:anywhere
-  }
-  .service-row p{
-    font-size:15px
   }
   .service-row ul{
     columns:1;
@@ -1517,12 +1464,6 @@ details[open] .plus{
   }
   .all-articles{
     gap:40px
-  }
-  .knowledge-note h2{
-    font-size:36px
-  }
-  .contact-page h1{
-    font-size:48px
   }
   .contact-facts{
     grid-template-columns:1fr
@@ -1544,33 +1485,20 @@ details[open] .plus{
   .field label{
     font-size:13px
   }
-  .article-title{
-    font-size:45px
-  }
   .article-lead{
     font-size:17px
   }
   .article-main article h2{
     font-size:32px
   }
-  .article-main article p,.article-main article li{
-    font-size:15px
-  }
   .article-main article ul{
     padding-left:18px
   }
   .legal h1{
-    font-size:52px;
     margin-bottom:36px
-  }
-  .legal p{
-    font-size:15px
   }
   .legal h2{
     font-size:18px
-  }
-  .text-link{
-    font-size:14px
   }
 }
 
