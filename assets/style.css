@@ -355,12 +355,10 @@ input:focus-visible,textarea:focus-visible{
 }
 
 .hero-image>img{
-  height:100%;
   width:100%;
+  height:clamp(535px,40vw,635px);
   object-fit:cover;
-  object-position:67% center;
-  min-height:535px;
-  max-height:635px
+  object-position:67% center
 }
 
 .hero-image figcaption{
@@ -601,6 +599,7 @@ input:focus-visible,textarea:focus-visible{
 
 .company-intro img{
   width:100%;
+  height:auto;
   aspect-ratio:4/5;
   object-fit:cover;
   object-position:58% center
@@ -1059,7 +1058,7 @@ details[open] .plus{
     font-size:clamp(60px,7.4vw,82px)
   }
   .hero-image>img{
-    min-height:510px
+    height:510px
   }
   .hero-image figcaption{
     flex-direction:column;
@@ -1159,7 +1158,7 @@ details[open] .plus{
     margin-top:22px
   }
   .hero-image>img{
-    min-height:430px
+    height:430px
   }
   .hero-copy{
     padding-bottom:20px
@@ -1321,8 +1320,6 @@ details[open] .plus{
   .hero-image>img{
     aspect-ratio:1.05/1;
     height:auto;
-    min-height:0;
-    max-height:none;
     object-position:68% center
   }
   .hero-image figcaption{
