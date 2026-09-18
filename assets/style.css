@@ -225,18 +225,6 @@ input:focus-visible,textarea:focus-visible{
   gap:36px
 }
 
-.brand{
-  display:block;
-  width:185px;
-  flex:0 0 185px
-}
-
-.brand img{
-  width:100%;
-  height:auto;
-  filter:invert(1)
-}
-
 .header-inner nav{
   display:flex;
   align-items:center;
@@ -1111,10 +1099,6 @@ details[open] .plus{
   .header-inner nav a{
     font-size:13px
   }
-  .brand{
-    width:160px;
-    flex-basis:160px
-  }
 }
 
 /* TABLET UND MOBILE NAVIGATION */
@@ -1129,10 +1113,6 @@ details[open] .plus{
     position:relative;
     flex-wrap:wrap;
     gap:0
-  }
-  .brand{
-    width:151px;
-    flex-basis:151px
   }
   .menu-toggle{
     display:flex;
@@ -1309,10 +1289,6 @@ details[open] .plus{
     --section-space-top:53px;
     --section-space-bottom:55px;
     --footer-size:10px
-  }
-  .brand{
-    width:143px;
-    flex-basis:143px
   }
   .hero{
     grid-template-columns:1fr;
